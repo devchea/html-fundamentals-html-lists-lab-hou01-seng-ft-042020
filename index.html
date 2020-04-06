@@ -30,11 +30,12 @@
     expect(children[3].text).to match("Cover with second slice of bread")
     expect(children[4].text).to match("Turn over and fry for 2 minutes") -->
       <ul>
-        <li>2 slices of bread</li>
-        <li>4 slices of cheese
+        <li>2 slices of bread
           <ul>
-            <li>Make sure to list out the three cheese types in the nested list</li>
-          </ul></li>
+            <li>Nested item</li>
+          </ul>
+        </li>
+        <li>4 slices of cheese</li>
         <li>1 tbsp of butter</li>
       </ul>
 </body>
