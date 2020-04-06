@@ -6,12 +6,21 @@
 <body>
 
   <!-- Write your HTML in this file -->
-<ul>
-  <li>Spread butter on bread and frying pan</li>
-  <li>Place bread in frying pan and fry</li>
-  <li>Add cheese on top of bread</li>
-  <li>Turn over and fry for 2 minutes</li>
-</ul>
+  <!-- RSpec.describe 'index.html' do
+    it 'contains a <ul> tag with the correct <li> tags' do
+      ul = parsed_html.search('ul').first
+      expect(ul).to_not be_nil, "The main <ul> tag is missing!"
+      expect(html_file_contents).to include('</ul>'), "Don't forget to include a closing </ul>"
 
+      children = ul.children.select {|child| child.name == "li"}
+      expect(children.length).to be >= 3, "Your <ul> tag needs at least three <li> tags, one for each ingredient"
+      expect(children[0].text).to match("2 slices of bread")
+      expect(children[1].text).to match("4 slices of cheese")
+      expect(children[2].text).to match("1 tbsp of butter") -->
+      <ul>
+        <li>2 slices of bread</li>
+        <li>4 slices of cheese</li>
+        <li>1 tbsp of butter</li>
+      </ul>
 </body>
 </html>
